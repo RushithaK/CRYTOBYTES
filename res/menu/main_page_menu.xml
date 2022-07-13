@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sort_by"
+        android:icon="@drawable/baseline_filter_list_24"
+        android:title="Sort"
+        app:showAsAction="always"
+        android:tooltipText="Sort By"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Profile"
+        app:showAsAction="always"
+        android:tooltipText="User Profile Details"/>
+    <item
+        android:id="@+id/favMenu"
+        android:icon="@drawable/baseline_article_24"
+        android:title="Favourites"
+        app:showAsAction="never"
+        android:tooltipText="Favourites Page"/>
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/baseline_article_24"
+        android:title="News"
+        app:showAsAction="never"
+        android:tooltipText="News Page"/>
+    <item
+        android:id="@+id/feedback"
+        android:title="Feedback"
+        app:showAsAction="never"
+        android:tooltipText="give feedback"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:title="Logout"
+        app:showAsAction="never"
+        android:tooltipText="Log out user"/>
+</menu>
