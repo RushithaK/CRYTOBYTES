@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#618685"
+    tools:context=".MyActivities.LoginModule.OtpAuthActivity">
+
+    <TextView
+        android:id="@+id/idotpTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:text="  Enter The OTP To Be Verified"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/idverifyotp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:src="@drawable/otp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/idotpTV"
+        android:layout_above="@id/ETgetotp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/idotpTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="100dp"
+        android:hint="Enter Here"
+        android:textColorHint="@color/blac_shade_1"
+        android:textColor="@color/black"
+        android:id="@+id/ETgetotp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Didn't Recieve ?Change Your Number "
+        android:id="@+id/idTVChangeNo"
+        android:layout_below="@+id/ETgetotp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp">
+
+    </TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/idTVChangeNo"
+        android:id="@+id/TVVerifyOTP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rect"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Verify OTP"
+        android:paddingRight="10dp">
+
+
+    </Button>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TVVerifyOTP"
+        android:id="@+id/ProgressBarOTP"
+        android:visibility="invisible"
+        android:layout_marginTop="30dp">
+
+    </ProgressBar>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/otp"
+        android:layout_below="@+id/ProgressBarOTP"
+        android:layout_centerHorizontal="true">
+
+    </ImageView>
+
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/idCVCurrency"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/black_shade_2"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:id="@+id/idRLCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:id="@+id/coinIconIV"
+            >
+        </ImageView>
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/favButton"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_toLeftOf="@+id/idTVRate"-->
+<!--            android:src="@drawable/baseline_favorite_24">-->
+
+<!--        </ImageButton>-->
+
+        <!--text view for displaying symbol-->
+        <TextView
+            android:id="@+id/idTVSymbol"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/coinIconIV"
+            android:padding="1dp"
+            android:text="Symbol"
+            android:textColor="@color/tabTextColor"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+<!--        text view for displaying currency name-->
+        <TextView
+            android:id="@+id/idTVName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVSymbol"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@id/coinIconIV"
+            android:padding="2dp"
+            android:text="Name"
+            android:textColor="@color/teal_200"
+            android:textSize="17sp" />
+
+        <!--text view for displaying currency rate-->
+        <TextView
+            android:id="@+id/idTVRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="2dp"
+            android:textSize="15dp"
+            android:text="price"
+            android:textColor="@color/switchColor" />
+        <TextView
+            android:id="@+id/idTVRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="15dp"
+            android:text="rank"
+            android:layout_below="@id/idTVRate"
+            android:textColor="@color/primaryTextColor" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/idTVpc7d"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/idTVRank"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:ellipsize="marquee"-->
+<!--            android:marqueeRepeatLimit="marquee_forever"-->
+<!--            android:scrollHorizontally="true"-->
+<!--            android:singleLine="true"-->
+<!--            android:layout_marginStart="2dp"-->
+<!--            android:layout_marginLeft="2dp"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:layout_marginEnd="3dp"-->
+<!--            android:layout_marginRight="3dp"-->
+<!--            android:layout_marginBottom="2dp"-->
+<!--            android:padding="2dp"-->
+<!--            android:text=""-->
+<!--            android:textColor="@color/white" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/idTVpc1d"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/idTVRank"-->
+<!--            android:ellipsize="marquee"-->
+<!--            android:marqueeRepeatLimit="marquee_forever"-->
+<!--            android:scrollHorizontally="true"-->
+<!--            android:singleLine="true"-->
+<!--            android:layout_marginStart="2dp"-->
+<!--            android:layout_marginLeft="2dp"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginBottom="2dp"-->
+<!--            android:layout_toLeftOf="@id/idTVpc7d"-->
+<!--            android:padding="2dp"-->
+<!--            android:text=""-->
+<!--            android:textColor="@color/white" />-->
+
+        <TextView
+            android:id="@+id/idTVpc1h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVRank"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="8dp"
+            android:padding="2dp"
+            android:text=""
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MyActivities.SplashScreen">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cryptoLogoCV"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="120dp"
+        android:layout_centerInParent="true"
+        android:outlineSpotShadowColor="@color/dark_blue_shade"
+        >
+        <ImageView
+            android:id="@+id/cryptoLogo"
+            android:src="@drawable/crypto_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+             />
+
+    </androidx.cardview.widget.CardView>
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="250dp"-->
+<!--        android:id="@+id/cryptoLogo"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        app:civ_border_width="2dp"-->
+<!--        android:src="@drawable/crypto_icon"-->
+<!--        app:civ_border_color="#FF000000"-->
+<!--        />-->
+
+
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:id="@+id/cryptoTitle"
+        android:text="CryptoBytes"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black_shade_3"
+        android:layout_below="@+id/cryptoLogoCV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+</RelativeLayout>

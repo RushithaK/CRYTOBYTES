@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".MyActivities.LoginModule.LoginActivity"
+    android:id="@+id/relLayoutLogin">
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="151dp"
+        android:layout_height="81dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/black_shade_3"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </com.google.android.gms.common.SignInButton>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="40dp"
+        android:text="-------------0R-----------"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.466" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_above="@+id/centerhorizontalline"
+        android:padding="20dp"
+        android:text="Chat App Will "
+        android:textAlignment="center"
+        android:textColor="@color/blac_shade_1"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/centerhorizontalline">
+
+    </RelativeLayout>
+
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/countryCodeDetect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/centerhorizontalline"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="10dp"
+        app:ccpDialog_background="@color/white"
+        app:ccpDialog_textColor="@color/black"
+        app:ccp_areaCodeDetectedCountry="true"
+        app:ccp_autoDetectCountry="true">
+
+    </com.hbb20.CountryCodePicker>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:id="@+id/idPhonenoET"
+        android:hint="Enter Your Number Here"
+        android:textColorHint="@color/blac_shade_1"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/countryCodeDetect"
+        android:layout_marginTop="50dp">
+
+    </EditText>
+
+
+
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/idPhonenoET"
+        android:id="@+id/idOtpButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:paddingLeft="40dp"
+        android:text="Sent OTP"
+        android:textSize="15sp"
+        android:paddingRight="40dp"
+        android:background="@drawable/rect">
+
+    </android.widget.Button>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/idOtpButton"
+        android:id="@+id/ProgressBarMain"
+        android:visibility="invisible"
+        android:layout_marginTop="30dp">
+
+    </ProgressBar>
+
+
+
+
+</RelativeLayout>
