@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blac_shade_1">#292D36</color>
+    <color name="black_shade_2">#272B33</color>
+    <color name="black_shade_3">#22252D</color>
+    <color name="dark_blue_shade">#021853</color>
+    <color name="yellow">#ffa500</color>
+
+    <color name="colorPrimary">#28334a</color>
+    <color name="colorAccent">#148bee</color>
+    <color name="colorPrimaryDark">#212b40</color>
+
+    <color name="colorPrimaryDusk">#3c4862</color>
+    <color name="colorPrimaryAlternate">#253047</color>
+
+    <!-- 75 transparency  https://stackoverflow.com/questions/15852122/hex-transparency-in-colors-->
+    <color name="backgroundColor">#212b40</color>
+
+    <color name="tabTextColor">@color/primaryTextColor</color>
+
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#8c8c8c</color>
+    <color name="tertiaryTextColor">#7e8795</color>
+    <color name="quaternaryTextColo">#b9b9b9</color>
+
+    <color name="colorLoss">#f0655e</color>
+    <color name="colorGain">#50b12a</color>
+
+    <color name="bottomNavSelected">#f74a9e</color>
+    <color name="bottomNavUnSelected">#ffffff</color>
+
+    <color name="switchColor">#ffaf12</color>
+
+    <color name="cerise">#da0e86</color>
+    <color name="bubble_gum_pink">#ff5ba4</color>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sorting_options">
+        <item>A-Z</item>
+        <item>Market Cap (HL)</item>
+        <item>Price (HL)</item>
+        <item>Volume 24hr (HL)</item>
+        <item>Change 1hr (HL)</item>
+        <item>Change 24hr (HL)</item>
+        <item>Change 7d (HL)</item>
+        <item>Z-A</item>
+        <item>Market Cap (LH)</item>
+        <item>Price (LH)</item>
+        <item>Volume 24hr (LH)</item>
+        <item>Change 1hr (LH)</item>
+        <item>Change 24hr (LH)</item>
+        <item>Change 7d (LH)</item>
+    </string-array>
+</resources>
